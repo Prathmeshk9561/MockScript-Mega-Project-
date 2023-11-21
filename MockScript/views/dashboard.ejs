@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="http://localhost:5000/static/dashboard.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="http://localhost:5000/static/ResumeUpload.css">
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+    <title>Document</title>
+</head>
+<body>
+  <div class="container">
+  <div class="navbar-dashboard">
+    <div class="profile">
+      <div class="user-png">
+        <img src="http://localhost:5000/static/user-avatar.png" alt="">
+      </div>
+    <h2>  <%=profile %> </h2>
+
+    </div>
+      <div class="logo">
+        <h1>    Mock <span class="highlight">Script</span></h1>
+      </div>
+      <div class="logout btn mt-4" onclick="logout_confirmation()">Logout</div>
+  </div>
+</div>
+<div class="outer-box" >
+  <div class="note">
+    <p><span style="font-weight: bold;">Note :</span> File should be in PDF format only.</p>
+  </div>
+<div class="box">
+  <div class="input-bx">
+      <h2 class="upload-area-title">Upload Your Resume Here</h2>
+      
+          <input type="file" class="pdf" name="file" id="Upload" accept=".doc, .docx, .pdf" hidden>
+          <label for="Upload" class="uploadlabel">
+              <span> <i class="fa fa-cloud-upload"></i> </span>
+              <p>Click to Upload</p>
+          </label>
+     
+  </div>
+
+  <div id="filewrapper">
+      <h3 class="uploaded">Uploaded Resume is</h3>
+  </div>
+
+</div>
+<div class="upload-btn" id="up">
+  <button class="btn mt-4 upload-inner-btn" onclick="send_file()">Submit</button>
+</div>
+<div class="lds-dual-ring" id="spinner" style="margin-left: 30px;" hidden></div>
+</div>
+<div class="skill-header" hidden>
+  <h2>Skills we got in your Resume : </h2>
+</div>
+<div class="skill-box" id="jump-skill-box" >
+ 
+ </div>
+ 
+ 
+ <div class="space" style="height: 25vh;"></div>
+ <div class="footer-btn">
+  <button class="btn-sec mt-4 continue-btn"> <a href="http://localhost:5000/interview"> Continue</a></button>
+ </div>
+ <div class="footer"></div>
+<script src="http://localhost:5000/static/ResumeUpload.js"></script>
+</body>
+</html>

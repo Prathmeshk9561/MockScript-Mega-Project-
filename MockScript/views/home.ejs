@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  <link rel="stylesheet" href="http://localhost:5000/static/home.css">
+  <link
+    rel="stylesheet"
+    href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+  />
+ 
+<body>
+   
+<div class="container">
+    <div class="navbar-home">
+        <div class="logo">
+          <h1><span style="color: white;">M</span>ock <span class="highlight">Script</span></h1>
+        </div>
+      
+        <div class="menu">
+            <ul>
+               <li><a href="" class="link">Home</a></li>
+               <li><a href="" class="link">About</a></li>
+               <li><a href="" class="link">Tips</a></li>
+            </ul>
+        </div>
+        <div class="home-btn">
+          <input type="button" class="btn mt-4" value="Log In" onclick= window.location.href="http://localhost:5000/login";>
+          <input type="button" class="btn mt-4" value="Sign Up" onclick= window.location.href="http://localhost:5000/login">
+        </div>
+    </div>
+    <div class="header">
+      <div class="left-section">
+        <h1>
+          MockScript helps job seekers get jobs faster by <span class="highlight">Automating Interviews.</span>
+        </h1>
+        <input type="button" class="btn-sec mt-4" value="Get Start" onclick= window.location.href="http://localhost:5000/login">
+       </div>
+      <div class="right-section">
+        <div class="w3-content w3-section" style="max-width:500px">
+          <img class="mySlides" src="http://localhost:5000/static/3d1.png" >
+          <img class="mySlides" src="http://localhost:5000/static/3d2.png" >
+          <img class="mySlides" src="http://localhost:5000/static/3d3.png" >
+          <img class="mySlides" src="http://localhost:5000/static/3d4.png" >
+          <img class="mySlides" src="http://localhost:5000/static/3d5.png" >
+          <img class="mySlides" src="http://localhost:5000/static/3d6.png" >
+          <img class="mySlides" src="http://localhost:5000/static/3d7.png" >
+        </div>
+        
+      </div>
+           </div>
+</div>
+<script>
+  var myIndex = 0;
+  carousel();
+  
+  function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 3000); // Change image every 2 seconds
+  }
+
+
+  </script>
+</script>
+</body>
+</html>

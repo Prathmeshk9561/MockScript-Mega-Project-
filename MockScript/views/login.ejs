@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>MockScript</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+    <link rel="stylesheet" href="http://localhost:5000/static/login.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+  </head>
+  <body>
+    <script src="http://localhost:5000/static/login.js"></script>
+
+   
+    <div class="section">
+      
+      <div class="container">
+        <div class="logo-login">
+          <h1 style="text-transform: uppercase;" >Mock <span class="highlight" >Script</span></h1>
+        </div>
+        <div class="row full-height justify-content-center">
+       
+          <div class=" col-12 text-center align-self-center py-5">
+           
+            <div class=" section pb-5 pt-5 pt-sm-2 text-center">
+              
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="reg-log"
+                name="reg-log"
+              />
+              <label for="reg-log"></label>
+              <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                  <div class="card-front">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4 pb-3">Log In</h4>
+                        <!-- <form action="" method="post"> -->
+                        <div class="form-group">
+                          <input
+                            onclick="removeline()"
+                            type="email"
+                            name="logemail"
+                            class="form-style email"
+                            placeholder="Your Email"
+                            id="logemail"
+                            autocomplete="off" required
+                          />
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input
+                          onclick="removeline()"
+                            type="password"
+                            name="logpass"
+                            class="form-style pass"
+                            placeholder="Your Password"
+                            id="logpass"
+                            autocomplete="off"
+                            required
+                          />
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <input  type="submit" class="btn mt-4" onclick="login()" required>
+                        <!-- <a href="#" type="submit" class="btn mt-4">submit</a> -->
+                    <!-- </form> -->
+
+
+
+
+                        <p class="mb-0 mt-4 text-center">
+                         <p class="link"></p>
+                        </p>
+              
+                      </div>
+                    </div>
+                    
+                  </div>
+                  
+                  <div class="card-back">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4 pb-3">Sign Up</h4>
+                        
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            name="sign-name"
+                            onclick="removeline()"
+                            class="form-style sign-name"
+                            placeholder="Your Full Name"
+                            id="logname"
+                            autocomplete="off"
+                          />
+                          <i class="input-icon uil uil-user"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input
+                          onclick="removeline()"
+                            type="email"
+                            name="sign-email"
+                            class="form-style sign-email"
+                            placeholder="Your Email"
+                            id="sign-mail"
+                            autocomplete="off"
+                          />
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input
+                          onclick="removeline()"
+                            type="password"
+                            name="sign-logpass"
+                            class="form-style sign-pass"
+                            placeholder="Your Password"
+                            id="sign-pass"
+                            autocomplete="off"
+                          />
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <input type="button" value="Submit" class="btn mt-4" onclick="signup()">
+                        <p class="mb-0 mt-4 text-center sign-link">
+
+                        </p>
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="lds-dual-ring" id="spinner" style="margin-left: 30px;" hidden></div>
+          </div>
+        </div>
+      </div>
+    </div>   
+  </body>
+</html>

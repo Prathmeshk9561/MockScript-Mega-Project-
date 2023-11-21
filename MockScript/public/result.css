@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.navbar {
+    background-color: #1f2029;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 95%;
+    margin: auto;
+}
+#header1{
+    margin: 10px;
+    padding: 10px;
+    color: rgb(0, 0, 0);
+    background-color: #cfd0da;
+    border-radius: 5px;
+}
+
+.main2 {
+    margin: 3%;
+    padding: 0px;
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.mainblock {
+    /* border: solid 2px red; */
+    display: flex;
+    flex-direction: column;
+}
+
+.progress_container {
+    max-width: 1140px;
+    width: calc(100% - 2rem);
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+
+.progress {
+    /* border: solid 2px rgb(0, 255, 85); */
+    height:300px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.progress_item {
+    padding: 10px 10px;
+}
+
+.progress_title {
+    padding: 0 0;
+    font-weight: lighter;
+}
+
+.progress_bar {
+    position: relative;
+    width: 30rem;
+    height: 20px;
+    border-radius: 5px;
+    background: #dadbe4;
+}
+.main2, .main3{
+display: none;
+}
+
+
+.bar {
+    border-radius: inherit;
+    background: linear-gradient(90deg, #73769b, #4e5168, #1f2029);
+    position: absolute;
+    transition: width 1.5s cubic-bezier(0.1, 0.42, 0.85, 1);
+    width: 0;
+    height: 100%;
+    left: 0;
+}
+.data{
+    background-color: #1f202965;
+    padding: 30px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.bar::after {
+    content: attr(data-text);
+    position: absolute;
+    margin-left: 100%;
+    top: 1.5rem;
+    width: 4rem;
+    height: 2rem;
+    background: #a6a8c9;
+    font-size: 18px;
+    line-height: 2rem;
+    color: #fff;
+    text-align: center;
+    border-radius: 0.1rem;
+    animation: text 2s ease-in;
+}
+.highlight{
+    color: #c4c3ca;
+}
+
+.wrapper1{
+    /* display: none; */
+    box-shadow: 1px 2px 15px 1px #1f2029;
+    border-radius: 10px;
+    padding-bottom: 20px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 30px;
+    text-align: center;
+}
+
+/* loader spinner css */
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+  }
+  .lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 34px;
+    height: 34px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #1f2029;
+    border-color: #1f2029 transparent #1f2029 transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+  }
+  @keyframes lds-dual-ring {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+
+@keyframes text {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+/* que to que comparosion */
+.main3{
+    /* border: solid 2px maroon; */
+    margin: 3%;
+    padding: 50px;
+    padding-left: 150px;
+}
+.data_item{
+    margin: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+}
+.main3 h3{
+    padding: 7px 0px;
+    
+}
+.space{
+    display: none;
+    width: 100%;
+    height: 100px;
+    background-color: #1f2029;
+}
+.main3 h2{
+    padding: 0px 40px;
+    
+}
